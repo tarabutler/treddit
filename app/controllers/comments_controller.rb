@@ -60,7 +60,7 @@ class CommentsController < ApplicationController
     @post = Post.find(@comment.post_id)
     @comment.destroy
     respond_to do |format|
-      format.html { redirect_to @post, notice: 'Comment was successfully destroyed.' }
+      format.html { redirect_to @post, notice: 'Comment was successfully delete.' }
       format.json { head :no_content }
     end
   end
